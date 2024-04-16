@@ -14,7 +14,7 @@ Let’s assume that you have to keep the record of the passengers and price to t
 ## Database creation and tables creation.
 ## Questions and Tasks
 1. Create a schema named Travego and create the tables mentioned above with the mentioned column names.Also,declare the relevant datatypes for each feature/column in the dataset.
-    ```sql
+```sql
 create schema Travego;
 
 use travego;
