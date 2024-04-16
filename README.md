@@ -114,10 +114,6 @@ from passenger p left join price pr on p.distance=pr.distance
 where pr.bus_type='sleeper' and pr.distance=(select p.distance from passenger p where boarding_city='panaji' and destination_city='Bengaluru');
 ```
 ![a3](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/2b35fbf3-91bc-438c-bef6-d24e24ab2c4a)
-![a1](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/c2163a6c-1457-473b-a715-49b922744f01)
-![3h](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/9a5b418c-e3dc-48c8-999b-14ffa98c719f)
-![a4](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/fb3e29e7-dcff-4f61-93d6-08e229297bbe)
-
 
 7. Alter the column category with the value "Non-AC" where the Bus_Type is sleeper.
 ``` sql
@@ -139,3 +135,6 @@ select * from passenger;
 ``` sql
 drop table passenger;
 ```
+
+# Conclusion
+This project helped me acquire basic understanding of how to create a database and how to create tables and insert the values into the tables and write query to retrieve only relavant information to create reports.
