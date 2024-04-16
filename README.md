@@ -74,10 +74,13 @@ select count(*) as No_of_female_passanger from passenger where Gender='F' and di
 ```sql
 select * from passenger where distance >500 and bus_type='Sleeper';
 ```
+![a2](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/e7356d55-a046-402e-8d40-0abdac38d902)
+
 3. Select passenger names whose names start with the character'S'.
 ``` sql
 select * from passenger where passenger_name like 's%';
 ```
+
 4. Calculate the price charged for each passenger,displaying the Passenger name,BoardingCity,DestinationCity,Bustype,and Price in the output.
 ``` sql
 select * from passenger p
@@ -91,6 +94,8 @@ select
 from passenger p
 join price pr on p.bus_type=pr.bus_type and p.distance=pr.distance;
 ```
+![a3](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/8d065501-ad67-4d85-9819-38d1e0d613df)
+
 5. What are the passenger name (s) and the ticket price for those who traveled 1000KMs Sitting in a bus?
 ``` sql
 select p.passenger_name,pr.price
@@ -108,6 +113,12 @@ select 'Sleeper' as Bus_type ,price as Charge
 from passenger p left join price pr on p.distance=pr.distance
 where pr.bus_type='sleeper' and pr.distance=(select p.distance from passenger p where boarding_city='panaji' and destination_city='Bengaluru');
 ```
+![a3](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/2b35fbf3-91bc-438c-bef6-d24e24ab2c4a)
+![a1](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/c2163a6c-1457-473b-a715-49b922744f01)
+![3h](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/9a5b418c-e3dc-48c8-999b-14ffa98c719f)
+![a4](https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/fb3e29e7-dcff-4f61-93d6-08e229297bbe)
+
+
 7. Alter the column category with the value "Non-AC" where the Bus_Type is sleeper.
 ``` sql
 update passenger set category = 'Non-AC' where Bus_Type = 'sleeper';
